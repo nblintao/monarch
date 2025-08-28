@@ -24,6 +24,7 @@ install_system_dependencies() {
     echo "Installing system dependencies..."
     dnf update -y
     dnf install clang-devel libunwind libunwind-devel -y
+    dnf install rsync -y # required for code sync
 }
 
 # Install and configure Rust nightly toolchain
